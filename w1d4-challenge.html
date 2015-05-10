@@ -1,0 +1,122 @@
+<!---
+  Today we will be reviewing some JavaScript functions!
+
+  PLEASE: Grab one of the staff if you're having any trouble! This is not a test!
+  
+  NOTE: There's a template at the bottom of this file for you to code in! Copy the template and paste it into your code editor to get started!
+
+  Friendly Reminders:
+  - You can open your terminal by typing 'terminal' in Spotlight (Mac OSX) which is accessible by pressing 'COMMAND + SPACE' at any time.
+  - Here's an example of what a function definition looks like:
+
+    var myFunc = function(){};
+
+  Please follow these instructions carefully and write your code below.
+
+    ==== SECTION 1: JavaScript Functions ====
+
+      1) Define a var named `myEmptyFunc` and assign a function to it that does nothing.
+      2) Invoke the function `myEmptyFunc` a few times and observe the nothingness that happens when executing the code.
+      3) Create a function named `returnFifteen` that returns the number `15`.
+      4) Invoke the function `returnFifteen` inside of a console.log() and observe the number `15` in the console.
+      5) Create a function named `multiplyByTwo` that accepts one argument named `input`. Have this function return the `input` times two.
+      6) Invoke the function `multiplyByTwo` inside of a console.log() and give it an input. Observe a doubling number right before your eyes!
+      7) Create a function named `sum` that accepts two arguments `num1` and `num2`. Have the function return the sum of both arguments.
+      8) Define a var named `scopeFun` and set its value to a string 'It's so nice outside!'.
+      9) Create a function named `negativeNelly` and inside the function change the outside variable `scopeFun` to have a string value of 'It's so crappy outside!'.
+      10) console.log() outside of the function `negativeNelly` and observe that `scopeFun` hasn't changed when you run the code.
+      11) Before your last console.log(), invoke your function `NegativeNelly()` and re-run your code. You should be observing 'It's so crappy outside!' instead of 'It's so nice outside!'.
+      12) EXTRA CREDIT: Define a variable inside of your own custom function. Try accessing the variable outside of the function and conceptualize why this might be happening. Take some time to research what 'scopes' are in JavaScript.
+
+    ==== SECTION 2: Vocab review ====
+
+      1) Explain a single scenario where you think a `while` loop might be useful:
+
+            * A while loop can be useful when waiting for asynchronous input.  For example: if we are the server and we are waiting for a request on 
+              port 3000, we can use a while loop to wait until we get such a request before executing any further code.
+      
+      2) Explain in your own words what the differences are between executing code in the terminal VS the browser:
+
+            * In the terminal, the NODE.JS engine is executing my code, whereas in google chrome, only the V8 engine provided with the browser is
+              executing my code.
+
+            * The terminal does not have access to "window" functions like 'alert.'
+      
+      
+IMPORTANT: Once you're finished, please upload this file to a GIST (gist.github.com) and send the link via Slack to @tylerlambe.
+WARNING: DO NOT send it to the class channel.
+
+-->
+
+<html>
+<head>
+  <title>5/7/15 Challenges!</title>
+  <style type="text/css">
+    h1{
+      color:lightblue;
+      text-align:center;
+      padding-top:45px;
+    }
+    h4{
+      text-align:center;
+      color:darkgray;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Functions</h1>
+  <h4>Functions are particular subsets of code that you can execute later.</h4>
+  <h4>If you're here for the Chrome JavaScript console, just hit "COMMAND + OPTION + J" to see your logs!</h4>
+  <script>
+    //Your JavaScript code goes here!
+      var myEmptyFunc = function(){};
+      myEmptyFunc();
+      myEmptyFunc();
+      myEmptyFunc();
+      
+      var returnFifteen = function() { return 15; };
+      console.log(returnFifteen());
+      console.log(returnFifteen());
+      console.log(returnFifteen());
+      console.log(returnFifteen());
+      
+      var multiplyByTwo = function(num) { return num * 2; };
+      console.log(multiplyByTwo(multiplyByTwo(multiplyByTwo(2))));
+      
+      var sum = function(num1, num2) { return num1 + num2; };
+      console.log(sum(1,2));
+      console.log(sum(100,12341512));
+      console.log(sum("alpha", "beta")); //concatenates!!!
+      
+      var scopeFun = "it's so nice outside!";
+      console.log(scopeFun);
+      var negativeNelly = function() { scopeFun = "it's so crappy outside!"; };
+      negativeNelly();
+      console.log(scopeFun);
+      
+//      function human (name, sex, height, weight, age) {
+//        if(typeof(name)==='undefined') name = 'alex';
+//        this.name = name;
+//        if(typeof(sex)==='undefined') sex = 'male';
+//        this.sex = sex;
+//        if(typeof(height)==='undefined') height = [5,9];
+//        this.height = height;
+//        if(typeof(weight)==='undefined') weight = 200;
+//        this.weight = weight;
+//        if(typeof(age)==='undefined') age = 24;
+//        this.age = age;
+//        this.getSex = function() { return this.sex; };
+//        this.getHeight = function() { return this.height; };
+//        this.getWeight = function() { return this.weight; };
+//        this.getAge = function() { return this.age; };
+//        this.getName = function() { return this.name; };
+//        this.get = function() { return this; };
+//      }
+//      
+//      var person1 = new human('alex');
+      
+      
+
+  </script>
+</body>
+</html>

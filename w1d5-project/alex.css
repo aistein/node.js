@@ -1,0 +1,42 @@
+* {
+	border-style: solid;
+	border-width: 3px;
+	border-color: purple;
+}
+
+#intro {
+	margin: 5%;
+	padding: 5px;
+}
+
+#most-important {
+	font-weight: bold;
+}
+
+#footer {
+	text-align: center;
+}
+
+#intro span {
+	color: green;
+	font-size: 75px;
+}
+
+#intro, #footer {
+	font-family: Courier;
+	color: blue;
+}
+
+.subtitle {
+	font-style: italic;
+	font-weight: bold;
+}
+
+.section {
+	padding: 10px;
+	margin: 2%;
+}
+
+.warning {
+	font-size: 25px;
+}

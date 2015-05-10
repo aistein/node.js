@@ -1,0 +1,48 @@
+[x] create a new HTML document w/ a <html> tag
+[x] inside it should have a <head> and <body> tag
+[x] inside the <head> tag, put a <title> tag and give your page a title
+[x] inside the <body> tag place four <div> tag with id attributes of "intro", "nav", "container", and "footer" respectively.
+[x] inside the <div> tag with the id of "container", create four <div>'s with the class of "section"
+
+[x] give every element on the page (*) a border that is three pixels wide and solidly purple 
+
+[x] inside the <div> tag with the id of "intro", place an <h1> tag with some text inside
+[x] give the tag w/ id "intro" a css rule that changes its width and/or height
+[x] inside each div with a class of section, place one or more <h4> tag, and few <p> paragraphs of text
+
+[x] also place a few <img src="http://www.dallasnews.com/incoming/20130712-garl001.jpg.ece/BINARY/w595x467/garl001.JPG"> and <a href="http://www.google.com">links</a> on the page
+[x] choose a few words or phrases to make <b>bold</b> or <i>italic</i>
+
+[x] add a css property that gives all <div>'s with the class "section" some padding, and some margin
+[x] give the first section div an id of "most-important"
+[x] add a css rule that gives only the most-important section a font weight of bold
+
+[x] inside the "footer", place a disclaimer about your page. Put part of that inside of a span tag, with a class of "warning"
+[x] add a css rule that changes the font-size of elements with the "warning" class
+[x] give the "footer" tag a css rule that aligns it's text in the center
+
+
+[x] wrap some of the words or phrases throughout the page in span tags, give some of those tags ids or classes
+[x] add a css rule that applies to only span tags inside the intro
+[x] add a css rule applies to both the intro and footer
+
+**EXTRA CREDIT**
+[] explore some of these common CSS properties: http://tech.journalism.cuny.edu/documentation/css-cheat-sheet/
+[x] inside the <div> tag with the id of "nav", create an unordered list, listing the sections of your page
+[] give the unordered list tag, a height of 20 pixels or so
+[] float the list tags to the left, adjust their width so they don't overlap, and change their list-style css property
+[] Give the "intro" tag a fixed position
+[] Figure out what this does:
+
+<style>
+    body {
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+    }
+</style>
+[] go crazy on it!
+
+[] Implement each of these positioning techniques in your project (at least to pg 8): http://learnlayout.com/
+[] Implement this layout: http://images.learnhowtoprogram.com/layout-test/2-column-layout.jpg
+[] Learn more about selecting HTML elements using CSS: http://flukeout.github.io
+
